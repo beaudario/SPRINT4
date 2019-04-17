@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Lab 04</title>
+</head>
+<body>
+	<script>
+		//DeclaringArray
+		var palet = new Array("wit", "blauw", "groen", "rood", "zwart");
+
+		//ShowArray
+		document.write(
+			"<br>Palet is nu: " + palet);
+
+		//ShowPrompt
+		var nieuwekleur = prompt("Typ een nieuwe kleur in: ");
+
+		//Push
+		palet.push(nieuwekleur);
+
+		//ShowArray
+		document.write(
+			"<br>Palet is nu: " + palet);
+
+		//ShowPrompt
+		var nieuwekleur1 = prompt("Typ een nieuwe kleur in: ");
+
+		//AddElement
+		palet.unshift(nieuwekleur);
+
+		//ShowArray
+		document.write(
+			"<br>Palet is nu: " + palet);
+
+		//SortingArray
+		palet.sort();
+
+		//ShowArray
+		document.write(
+			"<br>Palet is nu: " + palet);
+
+		//SplittingArray
+		palet2 = palet.splice(0,4);
+
+		//ShowArray
+		document.write(
+			"<br>Palet is nu: " + palet);
+		document.write(
+			"<br>Palet2 is nu: " + palet2);
+
+		//CopyArray
+		palet3 = palet.slice();
+
+		//ShowArray
+		document.write(
+			"<br>Palet3 is nu: " + palet3);
+	</script>
+</body>
+</html>

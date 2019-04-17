@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Lab 09</title>
+</head>
+<body>
+	<script>
+		//ShowPrompt
+		var rol = prompt("wat is je rol?");
+		var code = prompt("wat is je code?");
+
+		//MakeSwitchCase
+		switch(rol) 
+		{
+			case "admin": 
+			
+				//IfStatement
+				if (code == "admin") 
+				{
+					document.write("<br>welkom admin");
+				}
+				else 
+				{
+					alert("code ongeldig");
+				}
+				break;
+
+			case "student":
+
+				//IfStatement
+				if (code == "student") 
+				{
+					document.write("<br>welkom student");
+				}
+				else 
+				{
+					alert("code ongeldig");
+				}
+				break;
+
+			default: 
+				alert("rol ongeldig");
+				break;
+		}
+	</script> 
+</body>
+</html>
